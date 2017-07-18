@@ -4,7 +4,7 @@ const fs = require('fs');
 const format = require('util').format;
 const EventEmitter = require('events').EventEmitter;
 const fetch = require('node-fetch');
-import { Headers } from 'node-fetch';
+const Headers = require('node-fetch').Headers;
 let isNodejs = !!process.version;
 
 const LogLevels = {
