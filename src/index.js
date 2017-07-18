@@ -5,6 +5,9 @@ const format = require('util').format;
 const EventEmitter = require('events').EventEmitter;
 const fetch = require('node-fetch');
 const Headers = require('node-fetch').Headers;
+const moment = require('moment');
+
+
 let isNodejs = !!process.version;
 
 const LogLevels = {
@@ -103,7 +106,7 @@ class Logger {
         const formattedText = this._createLogMessage(level, text, format.timestamp, format.level, format.category, format.text);
         if (this.options.useGraylog) {
             this._sendToGraylog({
-                timestamp: Date.now() / 1000,
+                timestamp: moment().format(),
                 short_message: text,
                 long_message: text,
                 'hLevel': level
@@ -191,7 +194,7 @@ class Logger {
 
         let result = '';
 
-        if (this.options.showTimestamp) { result += `${String(new Date().toISOString())} `; }
+        if (this.options.showTimestamp) { result += `${String(moment().format())} `; }
 
         result = timestampFormat + result;
 

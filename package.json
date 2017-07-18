@@ -1,7 +1,7 @@
 {
   "name": "logpleaser",
   "description": "Simple Javascript logger for Node.js, Browsers and Graylog",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "Chris",
   "browser": {
     "fs": false
@@ -10,6 +10,7 @@
     "url": "https://github.com/ChrisHaPunkt/logpleaser/issues"
   },
   "dependencies": {
+    "moment": "^2.18.1",
     "node-fetch": "^1.7.1"
   },
   "devDependencies": {
