@@ -1,5 +1,5 @@
 # logpleaser
-Simple Javascript logger for Node.js and Browsers
+Simple Javascript logger for Node.js, Browsers and Graylog
 
 **[DEMO](https://ipfs.io/ipfs/QmRrBe2sp9ha2xypRoz5UDXqBJUB83NcecQU3QpqBJ5hkq)** 
 *Open the dev tools to see the log output*
@@ -9,7 +9,7 @@ Simple Javascript logger for Node.js and Browsers
 *logplease* does two simple things: output log messages to the console and/or to a file (Node.js only) and display the log messages with nice colors. Inspired by [log4js](https://github.com/stritti/log4js) and [debug](https://github.com/visionmedia/debug).
 
 ## Features
-- Log messages to stdout or a file
+- Log messages to stdout, a file and Graylog Server (HTTP-GELF)
 - Customize the log messages
 - Log levels
 - Colors!
