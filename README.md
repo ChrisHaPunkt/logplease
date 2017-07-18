@@ -6,7 +6,7 @@ Simple Javascript logger for Node.js, Browsers and Graylog
 
 ![Screenshot](https://raw.githubusercontent.com/chrishapunkt/logpleaser/master/screenshot.png)
 
-*logplease* does two simple things: output log messages to the console and/or to a file (Node.js only) and display the log messages with nice colors. Inspired by [log4js](https://github.com/stritti/log4js) and [debug](https://github.com/visionmedia/debug).
+*logpleaser* does two simple things: output log messages to the console and/or to a file (Node.js only) and display the log messages with nice colors. Inspired by [log4js](https://github.com/stritti/log4js) and [debug](https://github.com/visionmedia/debug).
 
 ## Features
 - Log messages to stdout, a file and Graylog Server (HTTP-GELF)
