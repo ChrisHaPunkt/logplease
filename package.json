@@ -1,40 +1,48 @@
 {
   "name": "logplease",
-  "version": "1.2.13",
-  "description": "Simple Javascript logger for Node.js and Browsers",
-  "main": "src/index.js",
-  "scripts": {
-    "test": "mocha",
-    "example": "node example/example.js",
-    "build": "npm run build:dist && npm run build:examples",
-    "build:dist": "./node_modules/.bin/webpack --config webpack.config.js",
-    "build:examples": "./node_modules/.bin/webpack --config webpack.example.config.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/haadcode/logplease.git"
-  },
+  "description": "Simple Javascript logger for Node.js, Browsers and Graylog",
+  "version": "1.0",
+  "author": "Chris",
   "browser": {
     "fs": false
   },
-  "keywords": [
-    "log",
-    "logger",
-    "logging"
-  ],
-  "author": "Haad",
-  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/haadcode/logplease/issues"
+    "url": "https://github.com/ChrisHaPunkt/logpleaser/issues"
   },
-  "homepage": "https://github.com/haadcode/logplease#readme",
+  "dependencies": {
+    "node-fetch": "^1.7.1"
+  },
   "devDependencies": {
     "babel-core": "^6.9.0",
     "babel-loader": "^6.2.4",
     "babel-plugin-transform-runtime": "^6.9.0",
     "babel-preset-es2015": "^6.9.0",
     "buffer": "^4.5.1",
+    "eslint": "4.2.0",
+    "eslint-plugin-promise": "3.5.0",
+    "eslint-plugin-react": "7.1.0",
+    "eslint-plugin-standard": "3.0.1",
     "mocha": "^2.4.5",
     "webpack": "^2.1.0-beta.7"
+  },
+  "homepage": "https://github.com/ChrisHaPunkt/logpleaser#readme",
+  "keywords": [
+    "log",
+    "logger",
+    "logging",
+    "graylog"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChrisHaPunkt/logpleaser.git"
+  },
+  "scripts": {
+    "build": "npm run build:dist && npm run build:examples",
+    "build:dist": "./node_modules/.bin/webpack --config webpack.config.js",
+    "build:examples": "./node_modules/.bin/webpack --config webpack.example.config.js",
+    "example": "node example/example.js",
+    "test": "mocha"
   }
 }
