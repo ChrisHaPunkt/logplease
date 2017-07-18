@@ -7,7 +7,7 @@ const Logger = require('../src/index')
 
 const logfile = 'test123.log'
 
-describe('logplease', function() {
+describe('logpleaser', function() {
   this.timeout(1000)
 
   before((done) => {

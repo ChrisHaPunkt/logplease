@@ -5,7 +5,7 @@ module.exports = {
   output: {
     libraryTarget: 'var',
     library: 'Logger',
-    filename: './dist/logplease.min.js'
+    filename: './dist/logpleaserr.min.js'
   },
   node: {
     console: false,

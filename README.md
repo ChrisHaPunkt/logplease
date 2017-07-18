@@ -1,10 +1,10 @@
-# logplease
+# logpleaser
 Simple Javascript logger for Node.js and Browsers
 
 **[DEMO](https://ipfs.io/ipfs/QmRrBe2sp9ha2xypRoz5UDXqBJUB83NcecQU3QpqBJ5hkq)** 
 *Open the dev tools to see the log output*
 
-![Screenshot](https://raw.githubusercontent.com/haadcode/logplease/master/screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/chrishapunkt/logpleaser/master/screenshot.png)
 
 *logplease* does two simple things: output log messages to the console and/or to a file (Node.js only) and display the log messages with nice colors. Inspired by [log4js](https://github.com/stritti/log4js) and [debug](https://github.com/visionmedia/debug).
 
@@ -17,7 +17,7 @@ Simple Javascript logger for Node.js and Browsers
 
 ## Install
 ```
-npm install logplease
+npm install logpleaser 
 ```
 
 ### Examples
@@ -35,7 +35,7 @@ Open `example/index.html` in your browser.
 See [example/example.js](https://github.com/haadcode/logplease/blob/master/example/example.js) for details.
 
 ```javascript
-const Logger = require('logplease');
+const Logger = require('logpleaser');
 const logger = Logger.create('utils');
 logger.debug(`This is a debug message`);
 logger.log(`This is a log message`); // alias for debug()
@@ -51,7 +51,7 @@ Copy `dist/logplease.min.js` to your javascripts directory and include it in you
 
 ```html
 <body>
-  <script type="text/javascript" src="dist/logplease.min.js" charset="utf-8"></script>
+  <script type="text/javascript" src="dist/logpleaser.min.js" charset="utf-8"></script>
   <script type="text/javascript">
     var logger  = Logger.create('logger name');
     logger.debug(`This is a debug message`);

@@ -1,7 +1,7 @@
 {
-  "name": "logplease",
+  "name": "logpleaser",
   "description": "Simple Javascript logger for Node.js, Browsers and Graylog",
-  "version": "1.0",
+  "version": "1.1",
   "author": "Chris",
   "browser": {
     "fs": false
