@@ -80,6 +80,8 @@ const options = {
   showLevel: true,     // Display log level in the log message
   filename: null,      // Set file path to log to a file
   appendFile: true,    // Append logfile instead of overwriting
+  useGraylog: false,
+  graylogUrl: null
 };
 ```
 
